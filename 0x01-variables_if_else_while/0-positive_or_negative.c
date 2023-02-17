@@ -1,53 +1,29 @@
-#include &lt;stdio.h&gt;
-#include &lt;stdlib.h&gt;
-#include &lt;time.h&gt;
-
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+/* more headers goes there */
 /**
-
-* main - Entry point
-
-*
-
-* Return: Always 0 (Success)
-
-*/
-
+ * main - Entry point
+ *
+ * Return: Always 0 (Sucess)
+ */
 int main(void)
-
 {
+	int n;
 
-int n;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+	{
+		printf("%d is positive\n", n);
+	}
+	else if (n < 0)
+	{
+		printf("%d is negative\n", n);
+	}
+	else
+	{
+		printf("%d is zero\n", n);
+	}
+	return (0);
 
-srand(time(0));
-
-n = rand() - RAND_MAX / 2;
-
-/* your code goes there */
-
-if (n &gt; 0)
-
-{
-
-printf(&quot;%d is positive\n&quot;, n);
-
-}
-
-if (n &lt; 0)
-
-{
-
-printf(&quot;%d is negative\n&quot;, n);
-
-}
-
-if (n == 0)
-
-{
-
-printf(&quot;%d is zero\n&quot;, n);
-
-}
-
-return (0);
-
-}
