@@ -1,7 +1,5 @@
 #include &lt;stdio.h&gt;
-
 #include &lt;stdlib.h&gt;
-
 #include &lt;time.h&gt;
 
 /**
