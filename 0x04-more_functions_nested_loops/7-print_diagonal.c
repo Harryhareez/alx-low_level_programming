@@ -21,7 +21,7 @@ _putchar('\\');
 else if (j < i)
 _putchar(' ');
 }
-_iputchar('\n');
+_putchar('\n');
 }
 }
 }
