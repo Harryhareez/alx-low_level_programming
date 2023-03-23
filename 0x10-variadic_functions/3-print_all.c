@@ -1,4 +1,3 @@
-#include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
 
@@ -49,5 +48,4 @@ i++;
 }
 }
 printf("\n");
-va_end(list);
 }
